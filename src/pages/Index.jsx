@@ -479,7 +479,7 @@ const Index = () => {
                 onClick={() => handleTemplateClick(index + 1)}
               >
                 <img
-                  src={`/assets/template${index + 1}-preview.png`}
+                  src={`./assets/template${index + 1}-preview.png`}
                   alt={template.name}
                   className={`w-full ${
                     template.name === "Template 10"
