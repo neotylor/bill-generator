@@ -295,6 +295,7 @@ const Index = () => {
     localStorage.removeItem("formData");
   };
 
+  const basename = import.meta.env.VITE_BASE_PATH || '/';
   return (
     <div className="container mx-auto px-4 py-8 relative">
       <h1 className="text-3xl font-bold mb-8 text-center">Bill Generator</h1>
@@ -479,7 +480,7 @@ const Index = () => {
                 onClick={() => handleTemplateClick(index + 1)}
               >
                 <img
-                  src={`./assets/template${index + 1}-preview.png`}
+                  src={`${basename}assets/template${index + 1}-preview.png`}
                   alt={template.name}
                   className={`w-full ${
                     template.name === "Template 10"
